@@ -1,6 +1,6 @@
-function bubbleSort(arr) {
+function bubbleSort(arr, last = 0) {
   let tempSwap, swaps = 0;
-  for (let i = 0; i < arr.length - 1; i++) {
+  for (let i = 0; i < arr.length - 1 - last; i++) {
     if (arr[i] > arr[i + 1]) {
       tempSwap = arr[i]
       arr[i] = arr[i + 1]
@@ -11,7 +11,7 @@ function bubbleSort(arr) {
   if (swaps === 0) {
     return arr
   } else {
-    return bubbleSort(arr)
+    return bubbleSort(arr, last + 1)
   }
 }
 
