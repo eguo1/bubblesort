@@ -8,10 +8,9 @@ function bubbleSort(arr) {
       swaps++
     }
   }
-  if(swaps === 0) {
+  if (swaps === 0) {
     return arr
-  }
-  else {
+  } else {
     return bubbleSort(arr)
   }
 }
