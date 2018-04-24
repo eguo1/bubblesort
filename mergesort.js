@@ -20,7 +20,7 @@ function merge(arr1, arr2) {
 }
 
 function mergeSort(arr) {
-  if(arr.length === 1) {
+  if (arr.length === 1) {
     return arr
   } else {
     let [firstHalf, secondHalf] = split(arr)
